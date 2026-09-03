@@ -1,0 +1,8 @@
+{
+  "categoria": "perfil",
+  "temas": [
+    {"id":"cidades","nome":"Cidades","opcoes":["São Paulo","Rio de Janeiro","Salvador","Recife"]},
+    {"id":"times","nome":"Times","opcoes":["Flamengo","Vasco","Botafogo","Palmeiras"]},
+    {"id":"idade","nome":"Faixa etária","opcoes":["18–24","25–34","35–44","45–54","55+"]}
+  ]
+}

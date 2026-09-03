@@ -1,0 +1,6 @@
+cd C:\Users\YHAGO\OneDrive\Desktop\batalhar_farejadores\frontend
+
+npm install
+
+
+npm run dev

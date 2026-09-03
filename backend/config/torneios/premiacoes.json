@@ -1,0 +1,13 @@
+{
+  "modelos": [
+    {
+      "id": "padrao_100",
+      "nome": "Padrão 100%",
+      "primeiro": 50,
+      "segundo": 35,
+      "organizador": 10,
+      "sistema": 5,
+      "ativo": true
+    }
+  ]
+}

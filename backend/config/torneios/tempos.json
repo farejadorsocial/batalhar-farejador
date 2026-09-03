@@ -1,0 +1,8 @@
+{
+  "padrao": {
+    "inscricao_minutos": 60,
+    "inicio_apos_lotacao_minutos": 30,
+    "duelo_minutos": 10
+  },
+  "observacao": "Os valores de torneios.json têm prioridade para cada edição."
+}

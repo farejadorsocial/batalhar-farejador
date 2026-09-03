@@ -1,0 +1,8 @@
+{
+  "categoria": "habitos_diarios",
+  "temas": [
+    {"id":"manha","nome":"Manhã","opcoes":["Acordou cedo","Tomou café","Fez exercício","Tomou banho"]},
+    {"id":"tarde","nome":"Tarde","opcoes":["Almoçou","Lanchou","Fez exercício","Trabalhou/estudou","Descansou"]},
+    {"id":"noite","nome":"Noite","opcoes":["Jantou","Assistiu algo","Leu","Organizou o dia seguinte","Dormiu cedo"]}
+  ]
+}

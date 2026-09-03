@@ -1,0 +1,8 @@
+{
+  "categoria": "habitos",
+  "temas": [
+    {"id":"manha","nome":"Manhã","opcoes":["Tomou café","Fez exercício","Trabalhou/estudou","Leu notícias"]},
+    {"id":"tarde","nome":"Tarde","opcoes":["Lanchou","Fez exercício","Trabalhou/estudou","Descansou","Assistiu algo"]},
+    {"id":"noite","nome":"Noite","opcoes":["Jantou","Assistiu algo","Leu","Jogou","Foi dormir cedo"]}
+  ]
+}

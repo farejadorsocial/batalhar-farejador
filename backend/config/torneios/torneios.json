@@ -1,0 +1,181 @@
+{
+  "versao": 2,
+  "descricao": "Configuração das edições automáticas. Cada edição grava um snapshot das regras e do card; alterações futuras não mudam torneios já abertos ou em andamento.",
+  "torneios": [
+    {
+      "id_config": "perfil_cidades_001",
+      "ativo": false,
+      "nome": "Torneio Perfil · Cidades",
+      "categoria": "perfil",
+      "tema_id": "cidades",
+      "modalidade": "gratuito",
+      "participantes": {
+        "minimo": 2,
+        "maximo": 2
+      },
+      "tempo": {
+        "inscricao_minutos": 15,
+        "inicio_apos_lotacao_minutos": 5,
+        "duelo_minutos": 6
+      },
+      "card": {
+        "quantidade_opcoes": 2
+      },
+      "duelo": {
+        "quantidade_respostas": 2
+      },
+      "entrada": {
+        "tipo": "gratuita",
+        "valor": 0
+      },
+      "premiacao": {
+        "tipo": "pool",
+        "valor": 100,
+        "primeiro": 45,
+        "segundo": 30,
+        "organizador": 15,
+        "sistema": 10
+      }
+    },
+    {
+      "id_config": "perfil_times_001",
+      "ativo": true,
+      "nome": "Torneio Perfil · Times",
+      "categoria": "perfil",
+      "tema_id": "times",
+      "modalidade": "gratuito",
+      "participantes": {
+        "minimo": 2,
+        "maximo": 2
+      },
+      "tempo": {
+        "inscricao_minutos": 15,
+        "inicio_apos_lotacao_minutos": 5,
+        "duelo_minutos": 6
+      },
+      "card": {
+        "quantidade_opcoes": 2
+      },
+      "duelo": {
+        "quantidade_respostas": 2
+      },
+      "entrada": {
+        "tipo": "gratuita",
+        "valor": 0
+      },
+      "premiacao": {
+        "tipo": "fixa",
+        "valor": 100,
+        "primeiro": 50,
+        "segundo": 35,
+        "organizador": 10,
+        "sistema": 5
+      }
+    },
+    {
+      "id_config": "habitos_diarios_noite_001",
+      "ativo": false,
+      "nome": "Torneio Hábitos Diários · Noite",
+      "categoria": "habitos_diarios",
+      "tema_id": "noite",
+      "modalidade": "gratuito",
+      "participantes": {
+        "minimo": 2,
+        "maximo": 2
+      },
+      "tempo": {
+        "inscricao_minutos": 15,
+        "inicio_apos_lotacao_minutos": 5,
+        "duelo_minutos": 6
+      },
+      "card": {
+        "quantidade_opcoes": 2
+      },
+      "duelo": {
+        "quantidade_respostas": 2
+      },
+      "entrada": {
+        "tipo": "gratuita",
+        "valor": 0
+      },
+      "premiacao": {
+        "tipo": "fixa",
+        "valor": 100,
+        "primeiro": 50,
+        "segundo": 35,
+        "organizador": 10,
+        "sistema": 5
+      }
+    },
+    {
+      "id_config": "premium_perfil_cidades_001",
+      "ativo": false,
+      "nome": "Premium Perfil · Cidades",
+      "categoria": "perfil",
+      "tema_id": "cidades",
+      "modalidade": "pago",
+      "participantes": {
+        "minimo": 2,
+        "maximo": 2
+      },
+      "tempo": {
+        "inscricao_minutos": 30,
+        "inicio_apos_lotacao_minutos": 30,
+        "duelo_minutos": 10
+      },
+      "card": {
+        "quantidade_opcoes": 2
+      },
+      "duelo": {
+        "quantidade_respostas": 2
+      },
+      "entrada": {
+        "tipo": "farejador",
+        "valor": 10
+      },
+      "premiacao": {
+        "tipo": "pool",
+        "valor": 0,
+        "primeiro": 50,
+        "segundo": 35,
+        "organizador": 10,
+        "sistema": 5
+      }
+    },
+    {
+      "id_config": "cinema_01",
+      "ativo": true,
+      "nome": "Toneio - Cinema",
+      "categoria": "cimena_0",
+      "tema_id": "filmes_0",
+      "modalidade": "gratuito",
+      "participantes": {
+        "minimo": 2,
+        "maximo": 2
+      },
+      "tempo": {
+        "inscricao_minutos": 15,
+        "inicio_apos_lotacao_minutos": 5,
+        "duelo_minutos": 6
+      },
+      "card": {
+        "quantidade_opcoes": 2
+      },
+      "duelo": {
+        "quantidade_respostas": 2
+      },
+      "entrada": {
+        "tipo": "gratuita",
+        "valor": 0
+      },
+      "premiacao": {
+        "tipo": "fixa",
+        "valor": 100,
+        "primeiro": 50,
+        "segundo": 35,
+        "organizador": 10,
+        "sistema": 5
+      }
+    }
+  ]
+}

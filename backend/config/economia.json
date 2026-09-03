@@ -1,0 +1,36 @@
+{
+  "versao": 1,
+  "moeda": {
+    "nome": "Farejador",
+    "plural": "Farejadores",
+    "simbolo": "F",
+    "casas_decimais": 0
+  },
+  "conversao": {
+    "habilitada": true,
+    "xp_por_farejador": 1000,
+    "farejadores_por_conversao": 1,
+    "xp_minimo": 1000
+  },
+  "supply": {
+    "autorizado": "1000000"
+  },
+  "progresso": {
+    "xp_por_nivel": 100
+  },
+  "torneios": {
+    "pontuacao": {
+      "primeiro": 100,
+      "segundo": 60,
+      "demais": 25
+    },
+    "xp": {
+      "primeiro": 250,
+      "segundo": 150,
+      "demais": 75
+    }
+  },
+  "premiacoes": {
+    "piso_minimo": 0
+  }
+}

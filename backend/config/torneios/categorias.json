@@ -1,0 +1,24 @@
+{
+  "categorias": [
+    {
+      "id": "perfil",
+      "nome": "Perfil",
+      "ativa": true
+    },
+    {
+      "id": "habitos",
+      "nome": "Hábitos",
+      "ativa": true
+    },
+    {
+      "id": "habitos_diarios",
+      "nome": "Hábitos diários",
+      "ativa": true
+    },
+    {
+      "id": "cimena_0",
+      "nome": "Cinema",
+      "ativa": true
+    }
+  ]
+}

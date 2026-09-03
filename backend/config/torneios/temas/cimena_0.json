@@ -1,0 +1,15 @@
+{
+  "categoria": "cimena_0",
+  "temas": [
+    {
+      "id": "filmes_0",
+      "nome": "Filmes",
+      "opcoes": [
+        "Terror",
+        "Ação",
+        "Comédia",
+        "Ficção Científica"
+      ]
+    }
+  ]
+}
