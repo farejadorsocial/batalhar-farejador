@@ -13,8 +13,8 @@ function themeClass(category){return String(category||'').replaceAll('_','-')}
 
 export default function Tournaments(){
  const[c,setC]=useState(),[mode,setMode]=useState('free'),[list,setList]=useState([]),[tick,setTick]=useState(0);
- async function load(){try{setC(await api('/tournaments/central'));const live=mode.startsWith('live');const m=mode.endsWith('paid')?'paid':'free';setList(await api(`/tournaments?mode=${m}&status=${live?'live':'open'}`))}catch{}}
- useEffect(()=>{load()},[mode,tick]);useEffect(()=>{const x=setInterval(()=>setTick(v=>v+1),1000);return()=>clearInterval(x)},[]);
+ async function load(){try{const live=mode.startsWith('live');const m=mode.endsWith('paid')?'paid':'free';const[a,b]=await Promise.all([api('/tournaments/central'),api(`/tournaments?mode=${m}&status=${live?'live':'open'}`)]);setC(a);setList(b)}catch{}}
+ useEffect(()=>{load();const x=setInterval(load,10000);return()=>clearInterval(x)},[mode]);useEffect(()=>{const x=setInterval(()=>setTick(v=>v+1),1000);return()=>clearInterval(x)},[]);
  const current=cards.find(x=>x[0]===mode)||cards[0];
  return <div className="page tournaments-page">
   <section className="tournament-hero">
