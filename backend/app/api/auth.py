@@ -25,8 +25,12 @@ def _aware(dt):
 
 def cookie(response,token):
     s=get_settings()
+    # O frontend e a API usam subdomínios diferentes do Render. Em produção,
+    # o cookie de refresh precisa aceitar requisições autenticadas entre essas
+    # origens. Em desenvolvimento, mantemos Lax para não quebrar HTTP local.
+    same_site="none" if s.cookie_secure else "lax"
     response.set_cookie("refresh_token",token,httponly=True,secure=s.cookie_secure,
-                        samesite="lax",max_age=s.refresh_token_days*86400,path="/api/auth")
+                        samesite=same_site,max_age=s.refresh_token_days*86400,path="/api/auth")
 
 def _visitor_from_cookie(db, request):
     return get_visitor(db, request.cookies.get("visitor_id"))
