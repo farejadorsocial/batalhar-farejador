@@ -1,6 +1,11 @@
 /* PUBLIC MOBILE POLISH
    Mantém a navegação pública acessível em telas pequenas sem alterar a estrutura das páginas. */
 
+.public-brand>span:last-child{font-size:0}
+.public-brand>span:last-child:after{content:'BATALHA DE FAREJADORES';font-size:14px;font-weight:inherit;letter-spacing:inherit}
+.public-footer>div:first-child>b{font-size:0}
+.public-footer>div:first-child>b:after{content:'BATALHA DE FAREJADORES';font-size:13px}
+
 @media (max-width: 760px){
   html,body,#root{max-width:100%;overflow-x:hidden}
 
@@ -40,6 +45,8 @@
     text-overflow:ellipsis;
     white-space:nowrap;
   }
+
+  .public-brand>span:last-child:after{font-size:12px}
 
   .public-actions{
     margin:0!important;
@@ -122,13 +129,8 @@
 @media (max-width:380px){
   .public-header{padding:0 10px!important}
   .public-brand{font-size:11px!important}
+  .public-brand>span:last-child:after{font-size:11px}
   .public-actions .primary{padding:8px 10px!important;font-size:11px}
   .public-header nav a{font-size:11px!important;padding:7px 9px!important}
   .public-hero-v2 h1{font-size:40px!important}
 }
-
-/* Identidade visual pública: apenas o texto mostrado ao visitante. */
-.public-brand>span:last-child{font-size:0}
-.public-brand>span:last-child:after{content:'BATALHA DE FAREJADORES';font-size:12px;font-weight:inherit;letter-spacing:inherit}
-.public-footer>div:first-child>b{font-size:0}
-.public-footer>div:first-child>b:after{content:'BATALHA DE FAREJADORES';font-size:inherit}
