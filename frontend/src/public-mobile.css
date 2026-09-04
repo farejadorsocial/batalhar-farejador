@@ -1,0 +1,134 @@
+/* PUBLIC MOBILE POLISH
+   Mantém a navegação pública acessível em telas pequenas sem alterar a estrutura das páginas. */
+
+@media (max-width: 760px){
+  html,body,#root{max-width:100%;overflow-x:hidden}
+
+  .public-header{
+    position:sticky!important;
+    top:0;
+    display:grid!important;
+    grid-template-columns:minmax(0,1fr) auto;
+    grid-template-rows:58px 48px;
+    gap:0 10px!important;
+    width:100%;
+    min-height:106px;
+    padding:0 14px!important;
+    align-items:center;
+  }
+
+  .public-brand{
+    min-width:0;
+    max-width:100%;
+    gap:8px!important;
+    overflow:hidden;
+    font-size:12px!important;
+    letter-spacing:.025em!important;
+  }
+
+  .public-brand .brand-mark{
+    width:34px!important;
+    height:34px!important;
+    min-width:34px;
+    border-radius:11px!important;
+    font-size:21px!important;
+  }
+
+  .public-brand>span:last-child{
+    min-width:0;
+    overflow:hidden;
+    text-overflow:ellipsis;
+    white-space:nowrap;
+  }
+
+  .public-actions{
+    margin:0!important;
+    display:flex!important;
+    align-items:center;
+    justify-content:flex-end;
+  }
+
+  .public-actions .ghost-btn{display:none!important}
+  .public-actions .primary{
+    white-space:nowrap;
+    padding:9px 12px!important;
+    border-radius:11px!important;
+    font-size:12px;
+  }
+
+  .public-header nav{
+    grid-column:1/-1;
+    grid-row:2;
+    order:unset!important;
+    width:100%!important;
+    min-width:0;
+    display:flex!important;
+    align-items:center;
+    gap:8px!important;
+    overflow-x:auto!important;
+    overflow-y:hidden;
+    padding:0 2px!important;
+    margin:0!important;
+    border-top:1px solid var(--line);
+    scrollbar-width:none;
+    -webkit-overflow-scrolling:touch;
+  }
+
+  .public-header nav::-webkit-scrollbar{display:none}
+
+  .public-header nav a{
+    flex:0 0 auto;
+    padding:8px 11px!important;
+    border:1px solid transparent;
+    border-radius:10px;
+    font-size:12px!important;
+    white-space:nowrap;
+  }
+
+  .public-header nav a.active{
+    color:var(--text-strong)!important;
+    background:var(--purple-soft);
+    border-color:color-mix(in srgb,var(--purple) 24%,var(--line));
+  }
+
+  .public-ad-top{width:calc(100% - 28px)!important;margin-top:14px!important}
+  .public-hero,.public-page-head,.public-section,.public-list,.public-ranking-table,.public-article{
+    width:calc(100% - 28px)!important;
+  }
+
+  .public-hero{padding-top:44px!important}
+  .public-hero-v2{min-height:auto!important;padding-bottom:58px!important}
+  .public-hero-v2 h1{font-size:44px!important;line-height:.96!important}
+  .public-hero-v2 .hero-lead{font-size:16px!important;line-height:1.65!important}
+  .public-hero-visual{min-height:350px!important;transform:scale(.86);transform-origin:center top}
+
+  .hero-actions{flex-wrap:wrap}
+  .hero-actions .primary,.hero-actions .ghost-btn{flex:1 1 180px;text-align:center}
+
+  .public-page-head{padding-top:42px!important}
+  .public-page-head h1{font-size:40px!important;line-height:1!important}
+  .public-page-head p{font-size:16px!important}
+  .page-head-actions{display:grid!important;grid-template-columns:1fr;gap:9px}
+  .page-head-actions .primary,.page-head-actions .ghost-btn{width:100%}
+
+  .public-tournament-v2{padding:18px!important}
+  .public-tournament-v2 .tournament-side{display:grid!important;grid-template-columns:1fr 1fr;gap:8px!important;width:100%}
+  .public-tournament-v2 .tournament-side .primary{grid-column:1/-1;width:100%}
+
+  .public-footer{padding:34px 14px 42px!important}
+  .footer-links{gap:9px 13px!important}
+}
+
+@media (max-width:380px){
+  .public-header{padding:0 10px!important}
+  .public-brand{font-size:11px!important}
+  .public-actions .primary{padding:8px 10px!important;font-size:11px}
+  .public-header nav a{font-size:11px!important;padding:7px 9px!important}
+  .public-hero-v2 h1{font-size:40px!important}
+}
+
+/* Identidade visual pública: apenas o texto mostrado ao visitante. */
+.public-brand>span:last-child{font-size:0}
+.public-brand>span:last-child:after{content:'BATALHA DE FAREJADORES';font-size:inherit;font-weight:inherit;letter-spacing:inherit}
+.public-footer>div:first-child>b{font-size:0}
+.public-footer>div:first-child>b:after{content:'BATALHA DE FAREJADORES';font-size:inherit}
