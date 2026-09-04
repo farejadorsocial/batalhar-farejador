@@ -129,6 +129,6 @@
 
 /* Identidade visual pública: apenas o texto mostrado ao visitante. */
 .public-brand>span:last-child{font-size:0}
-.public-brand>span:last-child:after{content:'BATALHA DE FAREJADORES';font-size:inherit;font-weight:inherit;letter-spacing:inherit}
+.public-brand>span:last-child:after{content:'BATALHA DE FAREJADORES';font-size:12px;font-weight:inherit;letter-spacing:inherit}
 .public-footer>div:first-child>b{font-size:0}
 .public-footer>div:first-child>b:after{content:'BATALHA DE FAREJADORES';font-size:inherit}
